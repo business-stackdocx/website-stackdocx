@@ -57,7 +57,7 @@ function NavBar() {
 
         {/* Request Demo Button for Desktop */}
         <div className="hidden md:block">
-          <button onClick={scrollToContact} className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800">
+          <button onClick={scrollToContact} className="bg-black text-white px-6 py-1 rounded-md hover:bg-gray-800">
             Request A Demo
           </button>
         </div>

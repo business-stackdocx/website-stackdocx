@@ -27,7 +27,7 @@ const Home = () => {
           />
           <button
             onClick={scrollToContact}
-            className="bg-black text-white px-7 py-2 rounded-md hover:bg-gray-800 w-full sm:w-auto"
+            className="bg-red text-white px-7 py-2 rounded-md hover:bg-gray-800 w-full sm:w-auto"
           >
             Request A Demo
           </button>
