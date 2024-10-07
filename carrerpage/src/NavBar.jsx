@@ -29,7 +29,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="w-full bg-white shadow-lg">
+    <nav className="w-full bg-blue-100 shadow-lg">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <div className="text-2xl font-bold" style={{ fontFamily: 'Gilroy' }}>
@@ -57,7 +57,7 @@ function NavBar() {
 
         {/* Request Demo Button for Desktop */}
         <div className="hidden md:block">
-          <button onClick={scrollToContact} className="bg-black text-white px-6 py-1 rounded-md hover:bg-gray-800">
+          <button onClick={scrollToContact} className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800">
             Request A Demo
           </button>
         </div>

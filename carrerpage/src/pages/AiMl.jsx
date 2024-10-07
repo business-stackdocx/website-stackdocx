@@ -1,84 +1,86 @@
 import React from 'react';
+import QA from '../assets/QA.jpg';
 
 function Home() {
   return (
-    <>
-      <div className="m-5 p-12 text-center text-gray-800">
-        <h1 className="text-4xl mb-5 font-bold">
-          Artificial Intelligence And Machine Learning
+    <div className="bg-gray-100 p-8 md:p-16 rounded-lg shadow-lg space-y-8">
+      {/* Header Section */}
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          AI Solutions Overview
         </h1>
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-lg md:text-xl text-justify text-gray-600 max-w-xl mx-auto">
-            Our expert team specializes in crafting high-performance native and hybrid apps in
-            <strong > Artificial Intelligence</strong> and
-            <strong > Machine Learning</strong> that make a splash in the app store.
-            We bring your ideas to life, ranging from social media to online stores, with exceptional design and
-            functionality. Trust us to create apps that will exceed your expectations..! We're committed to improving
-            the lives of as many people as possible. And we'll continue to responsibly build products and platforms
-            powered by the most advanced technology for people around the world..!
-          </p>
-          <img
-            src="https://webcdn.ringover.com/assets/desktop/all/products/ai-phone-system/06-ai-phone-system.png"
-            alt="no img"
-            className="w-80 h-80 md:w-[650px] md:h-[650px] mx-auto my-5"
-          />
-        </div>
-      </div>
-
-      <div className="container mx-auto p-10 text-gray-800">
-        <h2 className="text-3xl md:text-4xl text-center font-bold mb-5">
-          Our Expertise & Technology Knowledge
-        </h2>
-        <p className="text-lg md:text-xl text-center text-gray-600 leading-relaxed tracking-wide">
-        We Create a durable and responsive mobile app with excellent user experience using with the help of Artificial Intelligence and Machine Learning. Use our native development strategy for optimized advanced features and smooth. Transform your data into actionable insights with cutting-edge AI and ML solutions that drive                 innovation and optimize performance. Empowering businesses with AI-driven strategies to automate processes, enhance decision-making, and unlock new opportunities.
-        Specializing in custom AI development to deliver transformative insights and data-driven decisions for your enterprise. Harness the power of machine learning to turn  complex problems into scalable solutions that accelerate growth and innovation. Revolutionize your operations with advanced AI models that learn, adapt, and deliver  results beyond expectations.
+        <p className="text-gray-600">
+          At STACKDOCX SOLUTIONS PVT LMT, we specialize in providing cutting-edge Artificial
+          Intelligence (AI) solutions that help businesses enhance operational efficiency, automate
+          complex processes, and deliver personalized experiences.{" "}
+          <span className="font-semibold"></span>,{" "}
+          <span className="font-semibold"></span>To develop a customized AI solution
+          designed to optimize your{" "}
+          <span className="font-semibold">specific business process or goal</span>.
         </p>
-
-        <div className="flex flex-wrap justify-center mt-10">
-          <div className="bg-blue-500 text-left text-white rounded-lg p-8 m-4 w-80 h-40">
-            Detail-oriented design and development
-          </div>
-          <div className="bg-blue-500 text-left text-white rounded-lg p-8 m-4 w-80 h-40">
-            Native and hybrid app development
-          </div>
-          <div className="bg-blue-500 text-left text-white rounded-lg p-8 m-4 w-80 h-40">
-            Performance-oriented and lightweight apps
-          </div>
-          <div className="bg-blue-500 text-left text-white rounded-lg p-8 m-4 w-80 h-40">
-            Scalable and security-by-design approach
-          </div>
-        </div>
       </div>
 
-      <div className="container mx-auto text-center my-20">
-        <h1 className="text-4xl font-bold text-black mb-5">
-          Our Application <strong >Development</strong> <strong >Services</strong>
-        </h1>
-        <div className="flex flex-wrap justify-center">
-          <div className="bg-gray-100 border border-black rounded-lg p-8 m-4 w-80 h-52 text-blue-600 font-bold">
-            Native & Cross Platform Apps <br /><br />
-            <strong className="text-gray-600 text-sm">
-              Create stunning and cross-platform apps that engage our clients. High-performing, scalable, and
-              market-ready solutions.
-            </strong>
-          </div>
-          <div className="bg-gray-100 border border-black rounded-lg p-8 m-4 w-80 h-52 text-blue-600 font-bold">
-            Enterprise App (For Internal Use) <br /><br />
-            <strong className="text-gray-600 text-sm">
-              Custom Enterprise apps specific to your business needs. Streamline processes, improve productivity,
-              and enhance efficiency.
-            </strong>
-          </div>
-          <div className="bg-gray-100 border border-black rounded-lg p-8 m-4 w-80 h-52 text-blue-600 font-bold">
-            Mobile Only & Mobile + Web AppSolution<br /><br />
-            <strong className="text-gray-600 text-sm">
-              Expert mobile-only and mobile + web app solutions for seamless integration across all devices.
-             
-            </strong>
-          </div>
-        </div>
+      {/* Image Section */}
+      <div className="flex justify-center">
+        <img
+          src={QA} // Replace with the actual image URL
+          alt="AI Solutions"
+          className="w-full md:w-1/2 rounded-lg shadow-md" // Changed to md:w-1/2 for smaller size
+        />
       </div>
-    </>
+
+      {/* Challenges Section */}
+      <div className="space-y-4">
+        <h2 className="text-3xl font-semibold text-gray-800">Challenges</h2>
+        <p className="text-gray-600">
+          The client was facing difficulties in managing large datasets and lacked the ability to
+          derive actionable insights from them. Their existing systems were inefficient in processing
+          and analyzing data, resulting in delayed decision-making. They needed an AI-driven solution
+          that could not only automate these processes but also provide predictive analytics to
+          improve business outcomes.
+        </p>
+      </div>
+
+      {/* Solution Section */}
+      <div className="space-y-4">
+        <h2 className="text-3xl font-semibold text-gray-800">Solution</h2>
+        <p className="text-gray-600">
+          Our team implemented a comprehensive AI solution tailored to the client’s needs. We employed
+          machine learning algorithms to analyze large volumes of data and deliver actionable insights
+          in real-time. Key features of the AI solution include:
+        </p>
+        <ul className="list-disc list-inside text-gray-600 space-y-2">
+          <li>Predictive analytics to forecast future trends and optimize decision-making.</li>
+          <li>
+            Natural Language Processing (NLP) to automate customer service through chatbots and
+            sentiment analysis.
+          </li>
+          <li>
+            Computer vision to streamline visual data processing tasks such as quality control and
+            image recognition.
+          </li>
+          <li>
+            Data automation and integration for seamless processing of structured and unstructured
+            data from various sources.
+          </li>
+        </ul>
+        <p className="text-gray-600">
+          We integrated this AI solution into the client’s existing systems, allowing them to automate
+          workflows, enhance operational efficiency, and make data-driven decisions faster.
+        </p>
+      </div>
+
+      {/* Results Section */}
+      <div className="space-y-4">
+        <h2 className="text-3xl font-semibold text-gray-800">Results</h2>
+        <ul className="list-disc list-inside text-gray-600 space-y-2">
+          <li>40% improvement in operational efficiency through automated data processing and real-time insights.</li>
+          <li>Predictive accuracy improved by 35%, enabling the client to forecast demand and adjust resources accordingly.</li>
+          <li>Reduced response time by 50% with the implementation of AI-powered customer service tools, improving customer satisfaction.</li>
+          <li>Increased data accuracy and actionable insights, resulting in better decision-making and improved business outcomes.</li>
+        </ul>
+      </div>
+    </div>
   );
 }
 

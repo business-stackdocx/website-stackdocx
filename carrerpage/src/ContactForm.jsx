@@ -15,22 +15,47 @@ const ContactForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic
-    console.log('Form data submitted:', formData);
+
+    try {
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData), // Send form data as JSON
+      });
+
+      const result = await response.json();
+      if (response.ok) {
+        console.log('Success:', result);
+        alert('Your message has been sent successfully!'); // Alert on success
+        // Reset the form after successful submission
+        setFormData({
+          fullName: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+      } else {
+        console.error('Error:', result);
+        alert('There was an error sending your message. Please try again.'); // Alert on error
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An unexpected error occurred. Please try again later.'); // Alert on catch
+    }
   };
 
   return (
     <div id="contact"> 
       <div className="min-h-screen flex items-center justify-center bg-blue-50">
         <div className="max-w-4x2 mx-auto p-8 bg-white shadow-md rounded-lg">
-        <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center flex justify-center items-center text-black">
-        <FontAwesomeIcon icon={faEnvelope} className="text-black-600 mr-3 text-4xl" />
-        <span className="text-black">
-          Contact Us
-        </span>
-      </h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center flex justify-center items-center text-black">
+            <FontAwesomeIcon icon={faEnvelope} className="text-black-600 mr-3 text-4xl" />
+            <span className="text-black">Contact Us</span>
+          </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             
             {/* Left Section */}

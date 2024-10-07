@@ -1,41 +1,94 @@
+import auto from '../assets/auto.jpg';
+
 function Automation2() {
     return (
-      <>
-        <div className="my-12">
-          
-          <h1 className="text-3xl md:text-4xl font-bold text-black mb-12 text-center">Automation Solution</h1>
-        </div>
-  
-        <div className="flex flex-wrap justify-center items-center gap-10 px-10 pl-7 mx-auto">
-  <div className="max-w-lg text-lg leading-relaxed font-sans text-gray-800">
-    <p>
-      Our client automation solutions streamline your business processes by integrating advanced technologies that enhance efficiency and accuracy. 
-      Through intelligent automation, we handle routine tasks, optimize workflows, and provide real-time data insights, allowing your team to focus on strategic priorities. 
-      Experience reduced operational costs, increased productivity, and improved client interactions with our state-of-the-art automation tools designed to transform your business operations and drive growth.
-    </p>
-  </div>
+      <div className="bg-gray-100 p-8 md:p-16 rounded-lg shadow-lg space-y-8">
+      {/* Header Section */}
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          Automation Solutions Case Study
+        </h1>
+        <p className="text-gray-600">
+          At <span className="font-semibold">STACKDOCX SOLUTIONS PVT LMT</span>, we specialize in delivering innovative
+          automation solutions that streamline processes, reduce operational costs, and enhance overall
+          efficiency. <span className="font-semibold"></span>
+           <span className="font-semibold"></span>, To implement a comprehensive automation strategy aimed
+          at transforming their workflow and improving productivity.
+        </p>
+      </div>
 
-  <img
-    src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Advantages_and_Disadvantages_of_Automation.jpg"
-    alt="No image"
-    className="w-full max-w-sm rounded-lg mx-auto"
-  />
-</div>
+      {/* Image Section */}
+      <div className="flex justify-center">
+        <img
+          src={auto} // Replace with the actual image URL
+          alt="Automation Solutions"
+          className="w-full md:w-1/2 rounded-lg shadow-md" // Changed from md:w-2/3 to md:w-1/2
+        />
+      </div>
 
+      {/* Challenge Section */}
+      <div className="space-y-4">
+        <h2 className="text-3xl font-semibold text-gray-800">Challenges</h2>
+        <p className="text-gray-600">
+          The client faced challenges with manual, repetitive tasks that consumed significant time and
+          resources. Their existing processes were prone to errors, resulting in delays and
+          inefficiencies. They sought a solution that could automate these tasks, improve accuracy, and
+          free up their workforce to focus on higher-value activities.
+        </p>
+      </div>
 
-        <div className="my-24 px-20">
-          <h1 className="text-2xl font-bold">Automation can be used to manage client information in a variety of ways, including:</h1>
-          <div className="mt-8 text-lg leading-relaxed text-gray-800 space-y-8">
-            <p><b>Customer service:</b> Automated customer service can help manage more inquiries and free up human agents to focus on more complex requests. For example, automation can be used to schedule rides, send invoices, or distribute onboarding materials.</p>
-            <p><b>Communication:</b> Automated communication can be triggered by actions like a subscriber's birthday, an abandoned online cart, or a long period of time without opening an email. Automation can be implemented using AI, chatbots, or process automation platforms.</p>
-            <p><b>Data capture:</b> Automated data capture can help accountancy firms manage documents like tax returns, receipts, and income statements. It can also help speed up document approval workflows.</p>
-            <p><b>Web form filling:</b> Automated form filling can be achieved using web extensions like Katalon Recorder. This extension is available for Chrome, Firefox, and Edge.</p>
-            <p><b>Email automation:</b> Automation rules can be used to automatically insert customer information into emails. For example, a rule can be set to automatically insert a customer's name, order number, and delivery track number when an order moves to the "Delivery" stage.</p>
-          </div>
-        </div>
-      </>
-    );
-  }
+      {/* Solution Section */}
+      <div className="space-y-4">
+        <h2 className="text-3xl font-semibold text-gray-800">Solutions</h2>
+        <p className="text-gray-600">
+          Our team conducted a thorough analysis of the clients operations and identified key areas for
+          automation. We designed and implemented a customized automation solution that included:
+        </p>
+        <ul className="list-disc list-inside text-gray-600 space-y-2">
+          <li>
+            Robotic Process Automation (RPA) to automate routine tasks such as data entry, report
+            generation, and invoice processing.
+          </li>
+          <li>
+            Workflow automation to streamline approvals and notifications, reducing bottlenecks in the
+            process.
+          </li>
+          <li>Integration with existing systems to ensure seamless data flow and eliminate silos.</li>
+          <li>
+            Advanced analytics and reporting capabilities to provide insights into process performance
+            and identify further areas for improvement.
+          </li>
+        </ul>
+        <p className="text-gray-600">
+          The solution was designed to be scalable, allowing the client to expand automation efforts as
+          their business grows.
+        </p>
+      </div>
+
+      {/* Results Section */}
+      <div className="space-y-4">
+        <h2 className="text-3xl font-semibold text-gray-800">Results</h2>
+        <ul className="list-disc list-inside text-gray-600 space-y-2">
+          <li>
+            60% reduction in processing time for key tasks, enabling the client to reallocate resources
+            to more strategic initiatives.
+          </li>
+          <li>
+            75% decrease in errors associated with manual data entry, resulting in higher data accuracy
+            and reliability.
+          </li>
+          <li>
+            Improved employee satisfaction, as staff were freed from repetitive tasks and could focus on
+            more meaningful work.
+          </li>
+          <li>
+            Enhanced visibility into operational performance through real-time analytics, allowing for
+            data-driven decision-making.
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
   
-  export default Automation2;
-  
+export default Automation2;

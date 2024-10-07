@@ -10,6 +10,8 @@ import Footer from './Footer';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartLine } from '@fortawesome/free-solid-svg-icons';
+import Ai from "./assets/Ai.jpg"
+import webmob from "./assets/webmob.jpg"
 const App = () => {
   const navigate = useNavigate();
   return (
@@ -26,13 +28,13 @@ const App = () => {
     <div className="flex flex-wrap justify-center gap-6 p-6">
     
     <Card
-        imageSrc="https://images.pexels.com/photos/6802049/pexels-photo-6802049.jpeg"
+        imageSrc={webmob}
         title="Mobile App & Web Application Developed"
         description="Mobile App & Web Application Developed for your Businesses."
         onClick={() => navigate('/ApplicationDevPg1')} // Updated route
       />
       <Card
-        imageSrc="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        imageSrc={Ai}
         title="A.I. Solutions"
         description="Artificial intelligence (AI) business solutions are technologies that use AI to help businesses solve problems and improve decision-making."
         onClick={() => navigate('/AiMl')} // Updated route
